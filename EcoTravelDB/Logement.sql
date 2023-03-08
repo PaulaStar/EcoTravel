@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[Logement]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [nom] NCHAR(10) NOT NULL, 
+    [adresse] NCHAR(10) NOT NULL, 
+    [latitude] NCHAR(10) NOT NULL, 
+    [longitude] NCHAR(10) NOT NULL, 
+    [descriptionCourte] NCHAR(10) NOT NULL, 
+    [descriptionLongue] NCHAR(10) NOT NULL, 
+    [nbChambre] NCHAR(10) NOT NULL, 
+    [nbPiece] NCHAR(10) NOT NULL, 
+    [photo_1_N] NCHAR(10) NOT NULL, 
+    [nbPersonne] NCHAR(10) NOT NULL, 
+    [nbDouche] NCHAR(10) NOT NULL, 
+    [nbWC] NCHAR(10) NOT NULL, 
+    [balcon] NCHAR(10) NOT NULL, 
+    [airCo] NCHAR(10) NOT NULL, 
+    [wifi] NCHAR(10) NOT NULL, 
+    [miniBar] NCHAR(10) NULL, 
+    [animaux] NCHAR(10) NULL, 
+    [piscine] NCHAR(10) NULL, 
+    [voiturier] NCHAR(10) NULL, 
+    [roomService] NCHAR(10) NULL, 
+    [prix] NCHAR(10) NULL
+)
