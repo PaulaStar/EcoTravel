@@ -1,0 +1,4 @@
+﻿CREATE PROCEDURE [dbo].[Logement_Ajoute_Mois]
+	AS SELECT * FROM [Logement]
+    WHERE [DateCreation] BETWEEN CONVERT(DATETIME,DATEDIFF(DAY,30,GETDATE())) AND GETDATE() 
+GO

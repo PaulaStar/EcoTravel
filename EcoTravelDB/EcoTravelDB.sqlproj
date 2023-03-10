@@ -56,12 +56,33 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Procedures Stockées" />
+    <Folder Include="Vues" />
+    <Folder Include="Script-PostDeploiement" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Client.sql" />
     <Build Include="Logement.sql" />
+    <Build Include="Reservation.sql" />
+    <Build Include="Annulation.sql" />
+    <Build Include="Proprietaire.sql" />
+    <Build Include="Disponibilite.sql" />
+    <Build Include="Avis.sql" />
+    <Build Include="TypeLogement.sql" />
+    <Build Include="Photo.sql" />
+    <Build Include="Vues\ReservationPays.sql" />
+    <Build Include="Procedures Stockées\Logement_Ajoute_Mois.sql" />
+    <Build Include="Vues\LogementMieuxNote.sql" />
+    <Build Include="Procedures Stockées\ReservationClientEnCours.sql" />
+    <Build Include="Procedures Stockées\LogementDispo.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="EcoTravelDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EcoTravelDB.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script-PostDeploiement\Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>
